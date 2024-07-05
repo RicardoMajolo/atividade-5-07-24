@@ -16,19 +16,38 @@ Desafio: faça este programa utilizando uma estrutura de caso (switch-case).
 int main()
 {
     int idade;
+    char nome[50];
+    printf("qual o seu nome: ");
+    scanf("%s", &nome);
     printf("qual e a sua idade");
     scanf("%i", &idade);
-    if(idade<5 || idade>25){
-        printf ("nada");
-    }else if(idade >=5 && idade <11){
-        printf("Infantil");
+    printf("seu nome é: %s \n", nome);
+
+     if(idade >=5 && idade <11){
+        idade=1;
     }else if (idade>=11 && idade <16){
-        printf("Juvenil");
+        idade=2;
     }else if(idade>=16 && idade <21){
-        printf("Junior");
+        idade=3;
     }else if(idade>=21 && idade <26){
-         printf("Profissional");
+         idade=4;
+    }else {
+        idade=5;
+    }
+    switch (idade){
+    case 1:
+    printf ("infantil");
+    break;
+     case 2:
+    printf ("juvenil");
+    break;
+    case 3:
+    printf ("junior");
+    break;
+     case 4:
+    printf ("profissional");
+    break;
+    
     }
     return 0;
 }
-
