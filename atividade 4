@@ -1,0 +1,23 @@
+ /* Faça um programa que leia uma letra que represente o estado civil de uma pessoa e mostre uma 
+mensagem com a sua descrição (Solteiro(a), Casado(a), Viúvo(a), Divorciado(a)). O programa 
+deve apresentar uma mensagem de adequada caso uma letra diferente seja informada.
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    char a;
+    printf("selecione seu estado civil :\n (s) solteiro(a)\n (c) casado(a)\n (v) viuvo\n (d) divorciado(a)\n");
+    scanf("%c", &a);
+    if (a=='s'){
+    printf("estado civil: solteiro(a)");
+    }else if(a=='c'){
+    printf("estado civil: casado(a)");
+    }else if (a=='v'){
+    printf("estado civil: viuvo(a)");
+    }else if (a=='d'){
+    printf("estado civil: divorciado(a)");
+    }
+    return 0;
+}
